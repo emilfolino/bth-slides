@@ -19,6 +19,11 @@
     "slideorama": "^1.0.1"
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "htmlhint": "^0.11.0",
+    "javascript-style-guide": "^1.0.1",
+    "stylelint": "^9.10.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }
