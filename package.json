@@ -1,0 +1,25 @@
+{
+  "name": "bth-slides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run htmlhint && npm run eslint && npm run stylelint",
+    "start": "webpack -d",
+    "build": "webpack -p",
+    "production": "npm test && npm run build && rsync -av bundle.js bth.css index.html efo@emilfolino.se:/var/www/bth-slides.emilfolino.se/html/",
+    "htmlhint": "htmlhint *.html",
+    "eslint": "eslint *.js",
+    "stylelint": "stylelint *.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "slideorama": "^1.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
