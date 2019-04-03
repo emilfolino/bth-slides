@@ -73,7 +73,7 @@ p {
     position: relative;
     background-image: url('bthlogo_vit_256.png');
     background-position: top right;
-    background-size: 9%;
+    background-size: 6rem;
     background-repeat: no-repeat;
 }
 
@@ -109,9 +109,7 @@ code {
 }
 
 pre {
-    background-color: #ccc;
     border-left: 5px solid #069;
-    padding: 0.4rem 1rem;
     line-height: 1.4;
     color: #333;
     font-size: 1.2em;

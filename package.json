@@ -7,7 +7,7 @@
     "test": "npm run htmlhint && npm run eslint && npm run stylelint",
     "start": "webpack -d",
     "build": "webpack -p",
-    "production": "npm test && npm run build && rsync -av bundle.js bth.css index.html efo@emilfolino.se:/var/www/bth-slides.emilfolino.se/html/",
+    "production": "npm test && npm run build && rsync -av bundle.js bth.css bthlogo_vit_256.png index.html efo@emilfolino.se:/var/www/bth-slides.emilfolino.se/html/",
     "htmlhint": "htmlhint *.html",
     "eslint": "eslint *.js",
     "stylelint": "stylelint *.css"
@@ -16,13 +16,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "highlight.js": "^9.15.6",
     "slideorama": "^1.0.1"
   },
   "devDependencies": {
+    "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.12.4",
     "htmlhint": "^0.11.0",
     "javascript-style-guide": "^1.0.1",
+    "style-loader": "^0.23.1",
     "stylelint": "^9.10.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
